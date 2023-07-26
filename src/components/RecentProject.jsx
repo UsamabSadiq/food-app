@@ -7,8 +7,8 @@ const RecentProject = () => {
     const img = [ecommerce, musical, sidebar]
     return (
         <>
-            <div className="main mt-32 mb-20">
-                <div className="top text-center mb-8">
+            <div className="main mt-32 mb-20 ">
+                <div className="top text-center mb-8" >
                     <h1 className='text-4xl mb-4'>Recent</h1>
                     <p className='text-6xl font-extrabold text-[#FCA61F]'>Portfolio</p>
                 </div>
@@ -18,7 +18,7 @@ const RecentProject = () => {
                         {
                             img.map((item, ind) => {
                                 return (
-                                    <div key={ind} className='p-5'>
+                                    <div key={ind} className='p-5' data-aos='fade-left'>
                                         <img src={item} alt="" className='rounded-2xl' />
                                     </div>
 

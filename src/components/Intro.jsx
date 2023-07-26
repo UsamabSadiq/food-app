@@ -8,13 +8,12 @@ import vector2 from '../img/Vector2.png'
 // import thumbup from '../img/thumbup.png'
 import boy from '../img/boy.png'
 // import crown from '../img/crown.png'
-import glasses from '../img/glassesimoji.png'
 
 const Intro = () => {
     return (
         <>
-            <div className="main grid grid-cols-2 mt-10">
-                <div className="i-left py-16">
+            <div className="main grid grid-cols-2 mt-10" >
+                <div className="i-left py-16" data-aos='fade-down' data-aos-duration='600'>
                     <h1 className='text-7xl mb-3'>Hy! I Am</h1>
                     <h3 className='text-8xl text-yellow-400 font-semibold mb-3'>Usama Sadiq</h3>
                     <p className='text-xl mb-3'>Front-End Developer, Web Designer, UI/UX Designer </p>
@@ -28,7 +27,7 @@ const Intro = () => {
                     </div>
                 </div>
 
-                <div className="i-right flex justify-center items-center relative">
+                <div className="i-right flex justify-center items-center relative" data-aos='fade-up' data-aos-duration='40'>
 
                     <img src={vector1} alt="" className='absolute scale-[0.90]' />
                     <img src={vector2} alt="" className='absolute scale-[0.80]' />

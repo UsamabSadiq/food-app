@@ -4,29 +4,39 @@ import upwork from '../img/Upwork.png'
 import fiverr from '../img/fiverr.png'
 import facebook from '../img/Facebook.png'
 import shopify from '../img/Shopify.png'
+import amazon from '../img/amazon.png'
+
+
 
 const Employer = () => {
     const imgArr = [
         {
             img: upwork,
-            pos: 90,
+            topPos: '-top-12',
+            leftPos: 'left-24'
         },
-        {
-            img: facebook,
-            pos: 0,
-        },
+
         {
             img: shopify,
-            pos: 90
+            topPos: 'top-20',
+            leftPos: '-left-12'
         },
         {
             img: fiverr,
-            pos: 180
+            topPos: 'top-20',
+            leftPos: 'left-60'
+        },
+        {
+            img: facebook,
+            topPos: 'top-60',
+            leftPos: 'left-24'
         },
     ]
     return (
         <>
-            <div className="main grid grid-cols-2 mt-32">
+            <div className="main grid grid-cols-2 mt-32" data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <div className="i-left py-16">
                     <h1 className='text-4xl mb-3'>My Awesome</h1>
                     <h3 className='text-6xl text-yellow-400 font-semibold mb-3'>Services</h3>
@@ -35,42 +45,28 @@ const Employer = () => {
 
                 </div>
 
-                <div className="relative mt-10 cursor-pointer ">
-                    <div className="blueCircle blur-xl absolute left-64 bg-blue-700 rounded-full h-52 w-52"></div>
-                    <div className="blueCircle blur-xl absolute left-60 top-20 bg-yellow-500 rounded-full h-52 w-52"></div>
-                    <div className="blueCircle absolute left-32 top-8  bg-white border-2 rounded-full h-60 w-60">
-                        {/* <div className="img flex  justify-center items-center"> */}
-                        {
-                            imgArr.map((item, ind) => {
-                                return (
-                                    <div class={` relative w-20 h-20 border border-gray-500 rounded-full flex items-center justify-center `}>
+                <div className="right relative mt-10 cursor-pointer ">
+                    <div className="blueCircle blur-2xl absolute left-64 bg-blue-700 rounded-full h-56 w-56"></div>
+                    <div className="blueCircle blur-2xl absolute left-60 top-20 bg-yellow-500 rounded-full h-56 w-56"></div>
 
-                                        <div class={`w-1/2 h-1/2 absolute transform rotate-${item.pos} `}>
-                                            <div className={` w-full h-full object-cover rounded-full `}>
+                    <div className="main-w-circle relative left-36 top-8 bg-white w-72 h-72 rounded-full shadow-2xl">
+                        {imgArr.map((item, index) => {
+                            return (
+                                <div key={index} className={`sec-w-circle absolute ${item.topPos} ${item.leftPos} w-24 h-24 border-2 rounded-full flex justify-center items-center bg-white shadow-md`}>
+                                    <img src={item.img} alt="" className='scale-[0.6]' />
+                                </div>
+                            )
+                        })}
+                        <div className="sec-w-circle absolute left-24 top-20 w-24 h-24 border-2 rounded-full flex justify-center items-center bg-white shadow-md">
+                            <img src={amazon} alt="" className='scale-[0.6]' />
+                        </div>
 
-                                                <img src={item.img} />
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                )
-                            })
-
-                        }
                     </div>
-
-                    {/* </div> */}
                 </div>
-
-
             </div>
-
 
         </>
     )
 }
-
-
 
 export default Employer
