@@ -34,7 +34,7 @@ const Employer = () => {
     ]
     return (
         <>
-            <div className="main grid grid-cols-2 mt-32" data-aos="zoom-in"
+            <div className="main grid lg:grid-cols-2 grid-cols-1  mt-32" data-aos="zoom-in"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div className="i-left py-16">
@@ -46,10 +46,10 @@ const Employer = () => {
                 </div>
 
                 <div className="right relative mt-10 cursor-pointer ">
-                    <div className="blueCircle blur-2xl absolute left-64 bg-blue-700 rounded-full h-56 w-56"></div>
-                    <div className="blueCircle blur-2xl absolute left-60 top-20 bg-yellow-500 rounded-full h-56 w-56"></div>
+                    <div className="blueCircle blur-2xl absolute left-24 lg:left-64 bg-blue-700 rounded-full h-56 w-56"></div>
+                    <div className="blueCircle blur-2xl absolute left-20 lg:left-60 top-20 bg-yellow-500 rounded-full h-56 w-56"></div>
 
-                    <div className="main-w-circle relative left-36 top-8 bg-white w-72 h-72 rounded-full shadow-2xl">
+                    <div className="main-w-circle relative left-2 lg:left-36 top-8 bg-white w-72 h-72 rounded-full shadow-2xl">
                         {imgArr.map((item, index) => {
                             return (
                                 <div key={index} className={`sec-w-circle absolute ${item.topPos} ${item.leftPos} w-24 h-24 border-2 rounded-full flex justify-center items-center bg-white shadow-md`}>
@@ -57,7 +57,7 @@ const Employer = () => {
                                 </div>
                             )
                         })}
-                        <div className="sec-w-circle absolute left-24 top-20 w-24 h-24 border-2 rounded-full flex justify-center items-center bg-white shadow-md">
+                        <div className="sec-w-circle absolute left-14 lg:left-24  top-20 w-24 h-24 border-2 rounded-full flex justify-center items-center bg-white shadow-md">
                             <img src={amazon} alt="" className='scale-[0.6]' />
                         </div>
 

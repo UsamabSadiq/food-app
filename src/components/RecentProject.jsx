@@ -14,11 +14,11 @@ const RecentProject = () => {
                 </div>
 
                 <div className="content mb-4">
-                    <div className="grid grid-cols-3 gap-6">
+                    <div className="grid lg:grid-cols-3 grid-cols-1 gap-6">
                         {
                             img.map((item, ind) => {
                                 return (
-                                    <div key={ind} className='p-5' data-aos='fade-left'>
+                                    <div key={ind} className='p-5' data-aos={`${(ind % 2 === 0) ? 'fade-right' : 'fade-left'}`} >
                                         <img src={item} alt="" className='rounded-2xl' />
                                     </div>
 

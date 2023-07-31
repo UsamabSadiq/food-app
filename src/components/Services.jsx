@@ -21,16 +21,16 @@ const Services = () => {
 
     return (
         <>
-            <div className="main grid grid-cols-2 mt-32">
-                <div className="i-left py-16" data-aos='fade-right' data-aos-duration='600'>
+            <div className="main grid lg:grid-cols-2 grid-cols-1 mt-32">
+                <div className="i-left py-16 mt-[100px] lg:mt-0 text-center lg:text-left p-6 lg:p-0" data-aos='fade-right' data-aos-duration='600'>
                     <h1 className='text-4xl mb-3'>My Awesome</h1>
                     <h3 className='text-6xl text-yellow-400 font-semibold mb-3'>Services</h3>
-                    <p className='text-md mb-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis minima molestiae itaque laborum, cumque quo. Vero recusandae officiis similique eaque libero. Nihil animi, temporibus autem  sequi! </p>
+                    <p className='text-md lg:mb-20 mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis minima molestiae itaque laborum, cumque quo. Vero recusandae officiis similique eaque libero. Nihil animi, temporibus autem  sequi! </p>
                     <Button>Download CV...</Button>
 
                 </div>
 
-                <div className="r flex flex-col items-center gap-5" data-aos='fade-left' data-aos-duration='600'>
+                <div className="flex flex-col items-center gap-5 p-6 lg:p-0" data-aos='fade-left' data-aos-duration='600'>
 
                     {
                         card_data.map(({ icon, heading, para }, index) => {

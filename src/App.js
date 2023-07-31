@@ -30,7 +30,7 @@ function App() {
   // const [iconstate, setIconstate] = useState(true)
 
   const modeHandler = () => {
-    console.log('mode Change working');
+    // console.log('mode Change working');
     if (mode.color === 'white') {
       setMode({
         color: 'black',

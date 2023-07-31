@@ -22,13 +22,13 @@ const Experience = () => {
                     {
                         experienceData.map(({ numOfExp, text }, index) => {
                             return (
-                                <div key={index} className=" flex flex-col items-center gap-6">
+                                <div key={index} className=" flex flex-col items-center ">
                                     <div className="circle text-4xl p-1 bg-gradient-to-r from-yellow-400 to-red-800 rounded-full w-auto" data-aos='flip-right' data-aos-duration='6000' >
                                         <div className="num bg-none rounded-full p-4">
                                             {numOfExp}
                                         </div>
                                     </div>
-                                    <div className="text text-2xl px-5 ">
+                                    <div className="text text-2xl px-2 ">
                                         {text}
                                     </div>
                                 </div>

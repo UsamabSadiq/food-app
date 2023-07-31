@@ -5,14 +5,14 @@ const Contact = () => {
     return (
         <>
             <div className="main my-24">
-                <div className="grid grid-cols-2">
+                <div className="grid lg:grid-cols-2 grid-cols-1">
 
-                    <div className="left py-16">
+                    <div className="left py-16 text-center">
                         <h1 className='text-4xl mb-3'>Get In Touch</h1>
                         <h3 className='text-6xl text-yellow-400 font-semibold mb-3'>Contact Me</h3>
                     </div>
 
-                    <div className="right flex flex-col justify-center items-start gap-8" data-aos="fade-down"
+                    <div className="right flex flex-col items-center justify-center lg:items-start gap-8" data-aos="fade-down"
                         data-aos-easing="linear"
                         data-aos-duration="1100">
                         <input type="text" placeholder='Name' className='w-3/4 px-[6px] py-3 bg-white z-10 border-2 border-[#FCA61F] rounded-md text-xl' />
